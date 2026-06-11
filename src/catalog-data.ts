@@ -40,14 +40,7 @@ export type ModelAvailability =
   | "限定开放"
   | "unknown";
 
-export type ToolType =
-  | "编码 Agent"
-  | "通用任务 Agent"
-  | "企业 Agent"
-  | "工作流编排"
-  | "开发框架"
-  | "浏览器 Agent"
-  | "办公协同 Agent";
+export type ToolType = "通用任务 Agent";
 
 export type Audience =
   | "研发"
@@ -617,7 +610,7 @@ export const tools: Tool[] = [
     name: "Agents SDK",
     companyId: "openai",
     modelProviderIds: ["openai"],
-    toolType: "开发框架",
+    toolType: "通用任务 Agent",
     audiences: ["研发"],
     bestFor: "构建代码优先 Agent，支持工具编排、任务交接、审批流",
     website: "https://developers.openai.com",
@@ -643,7 +636,7 @@ export const tools: Tool[] = [
     name: "Gemini Enterprise Agent Platform",
     companyId: "google-deepmind",
     modelProviderIds: ["google-deepmind"],
-    toolType: "企业 Agent",
+    toolType: "通用任务 Agent",
     audiences: ["研发", "运营"],
     bestFor: "企业级 Agent 平台、多模态任务编排",
     website: "https://deepmind.google",
@@ -656,7 +649,7 @@ export const tools: Tool[] = [
     name: "Grok (Grok Build)",
     companyId: "xai",
     modelProviderIds: ["xai"],
-    toolType: "编码 Agent",
+    toolType: "通用任务 Agent",
     audiences: ["研发"],
     bestFor: "编码、推理、多模态理解",
     website: "https://x.ai",
@@ -669,7 +662,7 @@ export const tools: Tool[] = [
     name: "Vibe",
     companyId: "mistral-ai",
     modelProviderIds: ["mistral-ai"],
-    toolType: "编码 Agent",
+    toolType: "通用任务 Agent",
     audiences: ["研发"],
     bestFor: "IDE/终端编码、自动化 PR、多 Agent 并行",
     website: "https://mistral.ai/products/vibe/code/",
@@ -682,7 +675,7 @@ export const tools: Tool[] = [
     name: "Comet",
     companyId: "perplexity",
     modelProviderIds: [],
-    toolType: "浏览器 Agent",
+    toolType: "通用任务 Agent",
     audiences: ["运营", "市场", "管理者"],
     bestFor: "网页操作、购物、邮件、日程管理自动化",
     website: "https://www.perplexity.ai/comet/",
@@ -708,7 +701,7 @@ export const tools: Tool[] = [
     name: "UI-TARS",
     companyId: "bytedance-seed",
     modelProviderIds: ["bytedance-seed"],
-    toolType: "浏览器 Agent",
+    toolType: "通用任务 Agent",
     audiences: ["研发", "运营"],
     bestFor: "原生 GUI 操作、手机/桌面自动化、游戏",
     website: "https://seed-tars.com",
@@ -721,7 +714,7 @@ export const tools: Tool[] = [
     name: "AutoGLM",
     companyId: "zhipu-zai",
     modelProviderIds: ["zhipu-zai"],
-    toolType: "浏览器 Agent",
+    toolType: "通用任务 Agent",
     audiences: ["研发", "运营"],
     bestFor: "手机 GUI 自动化、屏幕理解、ADB 控制",
     website: "https://github.com/zai-org/Open-AutoGLM",
@@ -734,7 +727,7 @@ export const tools: Tool[] = [
     name: "MCP (Model Context Protocol)",
     companyId: "anthropic",
     modelProviderIds: [],
-    toolType: "开发框架",
+    toolType: "通用任务 Agent",
     audiences: ["研发"],
     bestFor: "Agent 工具互操作协议、连接外部数据源",
     website: "https://www.anthropic.com",
