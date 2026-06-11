@@ -1,3 +1,5 @@
+**English** | [中文](./README.zh-CN.md)
+
 # AI Agent Tools & Top Models Catalog
 
 A **daily-updated** catalog of AI companies, top models, and agent tools, presented as a filterable single-page web app.
